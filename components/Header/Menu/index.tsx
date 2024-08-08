@@ -40,7 +40,7 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
 
     useEffect(() => setLoaded(true), []);
 
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null); // Ensure the ref is typed correctly
 
     const handleClick = () => {
         setVisible(!visible);
@@ -78,13 +78,13 @@ const Menu = ({ navigation, socials, onClick }: MenuProps) => {
                           classNames="menu"
                           in={visible}
                           timeout={400}
-                          nodeRef={ref}
                           unmountOnExit
+                          nodeRef={ref} // Pass the ref to nodeRef
                       >
                           <div
                               className={cn(styles.menu)}
                               onClick={() => setVisible(false)}
-                              ref={ref}
+                              ref={ref} // Attach the ref here
                           >
                               <div
                                   className={cn(

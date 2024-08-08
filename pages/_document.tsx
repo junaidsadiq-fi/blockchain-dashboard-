@@ -44,10 +44,6 @@ class MyDocument extends Document {
                         content="Epic landing page UI Design Kit for Blockchain, Crypto"
                         property="twitter:description"
                     />
-                    <meta
-                        content="%PUBLIC_URL%/twitter-card.png"
-                        property="twitter:image"
-                    />
                     <meta property="og:type" content="Article" />
                     <meta content="summary" name="twitter:card" />
                     <meta name="twitter:site" content="@junaid_sadiq1122" />
